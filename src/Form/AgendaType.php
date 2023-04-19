@@ -15,8 +15,7 @@ class AgendaType extends AbstractType
     {
         $builder
             ->add('agenda')
-            ->add('user',EntityType::class,[
-            ])
+            ->add('user',EntityType::class)
             ->add('save', SubmitType::class, [
                 'attr' => ['class' => ' btn btn-info save'],
             ]);

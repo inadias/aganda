@@ -19,9 +19,7 @@ class AgendaController extends AbstractController
     {
             $agenda = new Agenda();
             $user=$this->getUser();
-           $form = $this->createForm(AgendaType::class,$agenda,[
-               'user'=>$user
-           ]);
+           $form = $this->createForm(AgendaType::class,$agenda);
            $form->handleRequest($request);
            if($form->isSubmitted()){
             dd($agenda);
