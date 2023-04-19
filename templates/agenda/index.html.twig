@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Agenda{% endblock %}
+
+{% block body %}
+<h1>Agenda de {% if app.user is defined %}{{ app.user.username }}{% endif %}</h1>
+    <div class="container">
+         {{ form(form) }}
+    </div>
+{% endblock %}
