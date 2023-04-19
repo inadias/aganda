@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\ContactDetail;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -17,6 +18,9 @@ class DetailType extends AbstractType
             ->add('email')
             ->add('website')
             ->add('contact')
+            ->add('save', SubmitType::class, [
+                'attr' => ['class' => ' btn btn-info save'],
+            ]);
         ;
     }
 
