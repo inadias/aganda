@@ -1,11 +1,11 @@
 <h1>Utilisation d'un projet Symfony depuis GitHub</h1>
 <h2>Cloner le dépôt GitHub en local</h2>
 
-git clone https://github.com/inadias/aganda.git
+git clone https://github.com/inadias/agenda.git
 
 <h2>Installer Bootstrap:</h2>
-  cd public:
-  npm -init 
+  <h4>cd public:</h4> <br>
+  npm -init <br>
   npm i bootstrap
 
 <h2>Installer les dépendances via Composer</h2>
