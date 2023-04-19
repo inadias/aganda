@@ -17,6 +17,16 @@ class ContactController extends AbstractController
     {
         $contact = new Contact();
         $form = $this->createForm(ContactType::class,$contact);
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            $form->getData();
+            $entityManager->persist($contact);
+            $entityManager->flush();
+            $this->addFlash('success','Ajouté avec succés');
+        }else{
+            $this->addFlash("fail","echec de l'ajout");
+        }
+
         return $this->render('contact/index.html.twig', [
             'form' => $form,
         ]);

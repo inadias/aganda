@@ -22,13 +22,10 @@ class AgendaController extends AbstractController
            $form = $this->createForm(AgendaType::class,$agenda);
            $form->handleRequest($request);
            if($form->isSubmitted()){
-            dd($agenda);
                $entityManager->persist($agenda);
                $entityManager->flush();
                $this-> addFlash('success'," l'agenda $agenda->getName() a été ajouté");
            }
-
-
 
 
         return $this->render('agenda/index.html.twig', [
