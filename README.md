@@ -4,7 +4,7 @@
 git clone https://github.com/inadias/agenda.git
 
 <h2>Installer Bootstrap:</h2>
-  cd public: <br>
+  <h4>cd public:</h4> <br>
   npm -init <br>
   npm i bootstrap
 
