@@ -1,4 +1,4 @@
-Utilisation d'un projet Symfony depuis GitHub
+<h1>Utilisation d'un projet Symfony depuis GitHub</h1>
 Cloner le dépôt GitHub en local
 
 git clone https://github.com/inadias/aganda.git
